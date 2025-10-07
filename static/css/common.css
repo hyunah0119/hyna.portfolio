@@ -1,3 +1,38 @@
+@import url(./font.css);
+
+/* font */
+:root {
+    /* font-family */
+    --font-main: 'Pretendard', sans-serif;
+    --font-title: 'GMarketSans', cursive;
+    --font-sub: 'Suit', sans-serif;
+
+    /* color */
+    --color-bg: #FFF2B2;              /* 버터 옐로 - 전체 배경 */
+    --color-point: #FFA9A3;           /* 포인트 핑크 - 버튼, 강조 */
+    --color-sub-point: #FFD88C;       /* 서브 포인트 - hover, 보조 하이라이트 */
+    
+    /* 텍스트 */
+    --color-text-main: #333333;       /* 기본 텍스트 */
+    --color-text-sub: #666666;        /* 설명, 보조 텍스트 */
+    --color-text-light: #999999;      /* 비활성 텍스트 */
+
+    /* hover */
+    --color-text-hover: #FF8F8A;
+    --color-bg-hover: #FFECA6;
+    --color-link-hover: #FF9B96;
+    
+    /* 요소 배경 및 라인 */
+    --color-surface: #FFFFFF;         /* 카드, 섹션 배경 */
+    --color-border: #E6E2DD;          /* 구분선, 테두리 */
+}
+
+html, body {
+    font-family: var(--font-main);
+    color: var(--color-text-main);
+    line-height: 1.5;
+}
+
 /* margin */
 .ma-5 {margin: 5px;}
 .ma-10 {margin: 10px;}

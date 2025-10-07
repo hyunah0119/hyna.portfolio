@@ -1,28 +1,33 @@
+@import url(./common.css);
+
 /* main */
 .main {
     width: 100%;
-    height: 100vh;
-    background-color: #FFF2B2;
+    height: auto;
+    background-color: var(--color-bg);
+    overflow: hidden;
+    overflow-y: auto;
     position: relative;
 }
 
-/* main - bubble motion */
+/* main - 버블 모션 */
 .bubble-wrap {
   position: absolute;
   inset: 0;
   overflow: hidden;
   z-index: 0;
+  pointer-events:none
 }
 
 .bubble {
   position: absolute;
-  bottom: -100px; /* 시작 위치 살짝 화면 아래 */
+  bottom: -100px;
   background: rgba(255, 255, 255, 0.6);
   border-radius: 50%;
   animation: rise 18s linear infinite;
 }
 
-/* 버블 크기/위치 랜덤하게 크게 배치 */
+/* 버블 크기/위치 랜덤하게 배치 */
 .bubble:nth-child(1) {
   left: 10%;
   width: 120px;
@@ -58,7 +63,6 @@
   animation-duration: 30s;
 }
 
-/* 🔹 천천히 크게 올라가도록 */
 @keyframes rise {
   0% {
     transform: translateY(0) scale(1);
@@ -69,6 +73,193 @@
     opacity: 0;
   }
 }
+
+/* header */
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  box-sizing: border-box;
+  position: fixed;
+  inset: 0;
+}
+
+.header-logo {
+  width: 20%;
+  text-align: center;
+}
+
+.header-logo a {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.nav-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  width: 60%;
+}
+
+.nav-list li {
+  width: 20%;
+  font-size: 18px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.nav-list li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-list li a:hover,
+.nav-list li a:active {
+  color: var(--color-text-hover);
+  font-weight: 700;
+}
+
+/* main - title */
+.title {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  padding: 0 60px;
+  box-sizing: border-box;
+}
+
+.title h3 {
+  font-size: 90px;
+  font-family: var(--font-title);
+  letter-spacing: 2px;
+}
+
+.title p {
+  font-size: 20px;
+  font-family: var(--font-sub);
+  font-weight: 700;
+  color: var(--color-text-sub);
+  margin-top: 20px;
+}
+
+/* section */
+.box {
+  padding: 60px;
+  box-sizing: border-box;
+}
+
+.box:nth-child(odd) {
+  background: rgba(255, 248, 220, .6);
+}
+
+.box-title {
+  font-size: 32px;
+  font-family: var(--font-title);
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* about me */
+.about {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.about-img {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  background-color: var(--color-point);
+  border-radius: 50%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25), 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.about-img img {
+  width: 100%;
+}
+
+.about-txt {
+  width: calc(100% - 450px);
+  height: 100%;
+}
+
+.about-txt .info {
+  font-size: 18px;
+  color: var(--color-text-sub);
+  line-height: 1.7;
+}
+
+.about-work {
+  margin-top: 30px;
+}
+
+.about-work h5 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.work-detail {
+  margin-top: 10px;
+}
+
+.work-date {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.work-company {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.work-company small {
+  display: block;
+  font-size: 90%;
+}
+
+.work-list {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-text-sub);
+  margin-top: 10px;
+}
+
+.work-list li {
+  position: relative;
+  padding-left: 10px;
+}
+
+.work-list li + li {
+  margin-top: 5px;
+}
+
+.work-list li::before {
+  content: '';
+  width: 3px;
+  height: 3px;
+  background-color: var(--color-text-main);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+/* works */
 
 
 

@@ -5,43 +5,190 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HYNA's 포트폴리오</title>
     <link rel="stylesheet" href="./static/css/reset.css">
-    <link rel="stylesheet" href="./static/css/common.css">
     <link rel="stylesheet" href="./static/css/style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     <div id="wrap">
-        <main class="main">
-            <!-- bubble motion -->
-            <div class="bubble-wrap">
-                <span class="bubble"></span>
-                <span class="bubble"></span>
-                <span class="bubble"></span>
-                <span class="bubble"></span>
-            </div>
-
-            <!-- header -->
-            <header>
-
-            </header>
+        <main>
+            <section class="main">
+                <!-- bubble motion -->
+                <div class="bubble-wrap">
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                </div>
+    
+                <!-- header -->
+                <header class="header">
+                    <div class="header-logo">
+                        <a href="#" title="Hyna's Portfolio 메인홈 바로가기">HYNA's Portfolio</a>
+                    </div>
+                    <ul class="nav-list">
+                        <li><a href="#" title="About Me 바로가기">ABOUT ME</a></li>
+                        <li><a href="#" title="Work 바로가기">WORK</a></li>
+                        <li><a href="#" title="Portfolio 바로가기">PORTFOLIO</a></li>
+                        <li><a href="#" title="Skill 바로가기">SKILL</a></li>
+                        <li><a href="#" title="Contact 바로가기">CONTACT</a></li>
+                    </ul>
+                </header>
+    
+                <!-- title -->
+                <div class="title">
+                    <h3>HYNA's Portfolio</h3>
+                    
+                    <p>
+                        안녕하세요! 6년차 웹 퍼블리셔입니다.<br>
+                        다양한 개발 환경에서 운영을 경험하며, 프론트엔드 전향을 준비하고 있습니다.
+                    </p>
+                </div>
+            </section>
 
             <!-- about me -->
-            <section></section>
+            <section class="box">
+                <h3 class="box-title">ABOUT ME</h3>
+
+                <div class="about">
+                    <div class="about-img">
+                        <img src="./static/img/me.png" title="Hyna 미모티콘 이미지">
+                    </div>
+                    <div class="about-txt">
+                        <p class="info">
+                            안녕하세요! 6년차 웹 퍼블리셔입니다.<br>
+                            리액트 기반을 포함한 여러 개발 환경에서 운영 경험을 쌓았으며,<br>
+                            직접 코드를 작성하고 기존 소스를 분석해 개선할 수 있습니다.<br>
+                            현재는 프론트엔드로의 전향을 목표로, 리액트 중심의 개발 역량을 확장하고 있습니다.
+                        </p>
+
+                        <div class="about-work">
+                            <h5>Work Experience</h5>
+
+                            <div class="work-detail">
+                                <span class="work-date">2020.07 ~ 현재 | (주)대림 대기업 (파견/운영) | 웹 퍼블리셔</span>
+                                <p class="work-company mt-5">
+                                    소속 : (주)로뎀라인 → (주)파노시스 → (주)디플럭스씨앤씨
+                                    <small>※ 입찰 구조로 인해 소속이 변경되었으나 동일 프로젝트 내에서 근무 지속</small>
+                                </p>
+
+                                <ul class="work-list">
+                                    <li>DL 계열사 13개 홈페이지(e편한세상, ACRO, DL홀딩스 등) 유지/보수</li>
+                                    <li>JSP 기반 웹 환경에서 HTML, CSS 마크업 및 JavaScript 작업 수행</li>
+                                    <li>React 기반 프로젝트에서 JSX, SCSS 마크업 및 TypeScript 작업 수행</li>
+                                    <li>Azure DevOps를 활용한 코드 형상 관리 및 배포 수행</li>
+                                    <li>Azure 리포지토리를 통한 소스 관리 및 파이프라인/릴리즈 기반 자동 배포 수행</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <!-- works -->
-            <section></section>
+            <section class="box">
+                <h3 class="box-title">WORK</h3>
+
+                <!-- Swiper -->
+                <div class="swiper workSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                              <a href="https://www.elife.co.kr/Mnmn_gate.action" target="_blank" rel="noopener noreferrer" class="work-card">
+                                <div class="thumb">
+                                    <img src="./static/img/work01.PNG" alt="e편한세상 게이트 페이지 썸네일" loading="lazy" />
+                                </div>
+                                <div class="card-text">
+                                    <h3 class="card-title">e편한세상 게이트 페이지</h3>
+                                    <p class="desc">
+                                        반응형 레이아웃으로 메인 게이트 페이지를 구축하였으며,
+                                        주요 섹션에 스크롤 트리거 애니메이션을 직접 구현했습니다.
+                                        오픈된 실제 운영 사이트로, 사용자 접근성을 고려해 HTML 구조와 CSS를 최적화했습니다.
+                                    </p>
+                                    <span class="btn-more">사이트 바로가기 →</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                              <a href="https://www.acro.co.kr/Posm_main.action?commonMap.CD_BIZ_LND=150468" target="_blank" rel="noopener noreferrer" class="work-card">
+                                <div class="thumb">
+                                    <img src="./static/img/work02.PNG" alt="ACRO 분양사이트 썸네일" loading="lazy" />
+                                </div>
+                                <div class="card-text">
+                                    <h3 class="card-title">ACRO 분양 사이트 구축</h3>
+                                    <p class="desc">
+                                        리뉴얼된 페이지 디자인을 기반으로 개발자와 협업하여 신규 분양 사이트를 구축했습니다.
+                                        기존 템플릿을 커스터마이징하고, 페이지 내 일부 스크립트는 직접 작성했습니다.
+                                        오픈된 실제 사이트로, 리뉴얼 구조를 분석해 효율적인 퍼블리싱 구조로 반영했습니다.
+                                    </p>
+                                    <span class="btn-more">사이트 바로가기 →</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                              <a href="javascript:;" target="_blank" rel="noopener noreferrer" class="work-card is-disabled">
+                                <div class="thumb">
+                                    <!-- <img src="./static/img/work02.PNG" alt="ACRO 분양사이트 썸네일" loading="lazy" /> -->
+                                </div>
+                                <div class="card-text">
+                                    <h3 class="card-title">Cariflex 관리자 페이지</h3>
+                                    <p class="desc">
+                                        내부 관리자용 시스템으로, 로그인 화면부터 메뉴 구조까지 전 페이지 퍼블리싱 100% 담당했습니다.
+                                        다양한 폼 요소와 테이블 UI를 컴포넌트화하여 유지보수성을 높였으며,
+                                        접근성 준수를 고려한 시맨틱 마크업 구조로 작업했습니다.
+                                    </p>
+                                    <span class="btn-more">사이트 바로가기 →</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                
+
+                <a>이 외 프로젝트 바로가기</a>
+            </section>
 
             <!-- portfolio -->
-            <search></search>
+            <section class="box"></section>
 
             <!-- skills -->
-            <search></search>
+            <section class="box"></section>
 
             <!-- contact -->
-            <section></section>
+            <section class="box"></section>
 
             <!-- footer -->
             <footer></footer>
         </main>
     </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".workSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 15,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
+        },
+        });
+    </script>
 </body>
 </html>
