@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./static/css/style.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
     <div id="wrap">
@@ -93,9 +96,9 @@
                 <div class="swiper workSwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                              <a href="https://www.elife.co.kr/Mnmn_gate.action" target="_blank" rel="noopener noreferrer" class="work-card">
+                            <a href="https://www.elife.co.kr/Mnmn_gate.action" target="_blank" rel="noopener noreferrer" class="work-card">
                                 <div class="thumb">
-                                    <img src="./static/img/work01.PNG" alt="e편한세상 게이트 페이지 썸네일" loading="lazy" />
+                                    <img src="./static/img/work01.jpg" alt="e편한세상 게이트 페이지 썸네일" loading="lazy" />
                                 </div>
                                 <div class="card-text">
                                     <h3 class="card-title">e편한세상 게이트 페이지</h3>
@@ -109,9 +112,9 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                              <a href="https://www.acro.co.kr/Posm_main.action?commonMap.CD_BIZ_LND=150468" target="_blank" rel="noopener noreferrer" class="work-card">
+                            <a href="https://www.acro.co.kr/Posm_main.action?commonMap.CD_BIZ_LND=150468" target="_blank" rel="noopener noreferrer" class="work-card">
                                 <div class="thumb">
-                                    <img src="./static/img/work02.PNG" alt="ACRO 분양사이트 썸네일" loading="lazy" />
+                                    <img src="./static/img/work02.jpg" alt="ACRO 분양사이트 썸네일" loading="lazy" />
                                 </div>
                                 <div class="card-text">
                                     <h3 class="card-title">ACRO 분양 사이트 구축</h3>
@@ -125,9 +128,10 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                              <a href="javascript:;" target="_blank" rel="noopener noreferrer" class="work-card is-disabled">
-                                <div class="thumb">
-                                    <!-- <img src="./static/img/work02.PNG" alt="ACRO 분양사이트 썸네일" loading="lazy" /> -->
+                            <a href="javascript:;" target="_blank" rel="noopener noreferrer" class="work-card is-disabled">
+                                <div class="thumb-icon">
+                                    <i class="fa-solid fa-building-lock fa-2xl"></i>
+                                    <span>(내부 보안 정책상 이미지는 비공개입니다.)</span>
                                 </div>
                                 <div class="card-text">
                                     <h3 class="card-title">Cariflex 관리자 페이지</h3>
@@ -186,6 +190,7 @@
             },
             1024: {
                 slidesPerView: 3,
+                spaceBetween: 50,
             },
         },
         });
