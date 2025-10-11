@@ -18,6 +18,11 @@ body.no-scroll {
   position: relative;
 }
 
+#about, #work, #project, #skill {
+  scroll-margin-top: 100px;
+}
+
+
 /* main - 버블 모션 */
 .bubble-wrap {
   position: absolute;
