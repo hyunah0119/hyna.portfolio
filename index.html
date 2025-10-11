@@ -445,6 +445,7 @@
         /* header nav btn (tablet/mobile) */
         const navBtn = document.querySelector('.nav-btn');
         const navList = document.querySelector('.mo-nav-list');
+        const navListItems = document.querySelector('.mo-nav-list li');
         const body = document.body;
 
         navBtn.addEventListener('click', (e) => {
@@ -453,6 +454,12 @@
             const isOpen = navBtn.classList.toggle('is-open');
             navList.classList.toggle('is-open');
             body.classList.toggle('no-scroll', isOpen);
+        });
+
+        navListItems.addEventListener('click', (e) => {
+            navBtn.classList.remove('is-opne');
+            navList.classList.remove('is-open');
+            body.classList.remove('no-scroll');
         });
 
         document.addEventListener('click', (e) => {
