@@ -13,9 +13,9 @@
     --color-sub-point: #FFD88C;       /* 서브 포인트 - hover, 보조 하이라이트 */
     
     /* 텍스트 */
-    --color-text-main: #333333;       /* 기본 텍스트 */
-    --color-text-sub: #666666;        /* 설명, 보조 텍스트 */
-    --color-text-light: #999999;      /* 비활성 텍스트 */
+    --color-text-main: #333;       /* 기본 텍스트 */
+    --color-text-sub: #666;        /* 설명, 보조 텍스트 */
+    --color-text-light: #999;      /* 비활성 텍스트 */
 
     /* hover */
     --color-text-hover: #FF8F8A;
