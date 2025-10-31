@@ -401,6 +401,19 @@ body.no-scroll {
   word-break: keep-all;
 }
 
+.role li {
+  line-height: 1.4;
+}
+
+.development {
+  color: var(--color-text-sub);
+}
+
+.development > span,
+.development > p {
+  display: inline-block;
+}
+
 .btn-more {
   display: block;
   font-size: 15px;
