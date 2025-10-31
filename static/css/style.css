@@ -366,7 +366,7 @@ body.no-scroll {
   font-weight: 700;
 }
 
-.card-text .desc {
+/* .card-text .desc {
   font-size: 16px;
   margin-top: 20px;
   word-break: keep-all;
@@ -378,6 +378,27 @@ body.no-scroll {
   color: var(--color-text-sub);
   font-weight: 500;
   margin: 20px 0;
+} */
+
+.card-txt {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.card-txt > div + div {
+  margin-top: 15px;
+}
+
+.card-txt > div > span {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card-txt > div > p,
+.card-txt > div > ul li {
+  font-size: 16px;
+  font-weight: 300;
+  word-break: keep-all;
 }
 
 .btn-more {
@@ -899,7 +920,7 @@ body.no-scroll {
     font-size: 18px;
   }
 
-  .card-text .desc {
+  /* .card-text .desc {
     font-size: 15px;
     margin-top: 10px;
   }
@@ -907,6 +928,19 @@ body.no-scroll {
   .card-text .desc strong {
     font-size: 15px;
     word-break: keep-all;
+  } */
+
+  .card-txt > div + div {
+    margin-top: 15px;
+  }
+
+  .card-txt > div > span {
+    font-size: 15px;
+  }
+
+  .card-txt > div > p,
+  .card-txt > div > ul li {
+    font-size: 15px;
   }
 
   .btn-more {
