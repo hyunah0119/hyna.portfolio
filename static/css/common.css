@@ -96,3 +96,8 @@ html, body {
 .pr-20 {padding-right: 20px;}
 .pr-25 {padding-right: 25px;}
 .pr-30 {padding-right: 30px;}
+
+/* display */
+.display-b {display: block;}
+.display-f {display: flex;}
+.display-ib {display: inline-block;}
