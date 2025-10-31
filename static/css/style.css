@@ -262,16 +262,6 @@ body.no-scroll {
   font-weight: 500;
 }
 
-.work-company {
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.work-company small {
-  display: block;
-  font-size: 90%;
-}
-
 .work-list {
   font-size: 16px;
   font-weight: 500;
@@ -888,8 +878,7 @@ body.no-scroll {
     font-size: 20px;
   }
 
-  .work-date,
-  .work-company {
+  .work-date {
     font-size: 16px;
   }
 
@@ -1113,7 +1102,7 @@ body.no-scroll {
     margin-top: 5px;
   }
 
-  .work-date, .work-company {
+  .work-date {
     font-size: 15px;
   }
 
