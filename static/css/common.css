@@ -33,6 +33,43 @@ html, body {
     line-height: 1.5;
 }
 
+/* table */
+.table-type1 {
+    width: 100%;
+    border-top: 1px solid #e6b983;
+    border-bottom: 1px solid #e6b983;
+}
+
+.table-type1 th {
+    border-right: 1px solid #f1c89d;
+    border-bottom: 1px solid #e6b983;
+}
+
+.table-type1 td {
+    font-weight: 300;
+    word-break: keep-all;
+    border-right: 1px solid #f1c89d;
+    border-bottom: 1px solid #f1c89d;
+}
+
+.table-type1 th,
+.table-type1 td {
+    font-size: 16px;
+    color: #4b3d2a;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+
+.table-type1 th:last-child,
+.table-type1 td:last-child {
+    border-right: 0;
+}
+
+.table-type1 tbody tr:last-child th,
+.table-type1 tbody tr:last-child td {
+    border-bottom: 0;
+}
+
 /* margin */
 .ma-5 {margin: 5px;}
 .ma-10 {margin: 10px;}
