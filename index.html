@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="./static/css/style.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <script src="static/js/common.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -60,9 +62,8 @@
                     <h3>HYNA's Portfolio</h3>
                     
                     <p>
-                        고객의 시선으로 생각하고<br>
-                        직관적인 UI/UX를 구현하는 웹 퍼블리셔.<br>
-                        <small class="display-b mt-10">JSP부터 React까지 다양한 환경에서 시맨틱하고 구조적인 마크업을 구현해왔습니다.</small>
+                        퍼블리싱 경험을 기반으로 <span>데이터 기반 UI를 설계하는 프론트엔드 개발자</span>
+                        <small class="display-b">사용자 경험과 코드 구조를 함께 고민합니다.</small>
                     </p>
                 </div>
             </section>
@@ -80,35 +81,15 @@
                         </div>
                         <div class="about-txt">
                             <p class="info">
-                                현재 6년차 웹 퍼블리셔로 대기업 인하우스 운영 프로젝트에서<br>
-                                웹사이트 관리 및 신규 구축을 담당해왔습니다.<br>
-                                JSP 기반부터 React 환경까지 다양한 개발 구조 속에서 퍼블리싱을 경험했고<br>
-                                새로운 기술을 빠르게 익히고 실무에 적용하는 것을 좋아합니다.<br>
-                                <br>
-                                인하우스 운영과 유지보수 경험을 통해 기획자·디자이너·개발자와의 협업에 익숙하며,<br>
-                                타인의 코드를 빠르게 파악하고 오류를 수정하는 데 강점을 가지고 있습니다.<br>
-                                <br>
-                                또한 JavaScript(ES6)를 활용해 인터랙션과 동작을 직접 구현할 수 있으며,<br>
-                                유틸리티 클래스 기반의 레이아웃 설계(Tailwind CSS 스타일)에 익숙합니다.
+                                6년간 대기업 인하우스 환경에서 웹사이트 운영 및 시스템 대시보드 구축을 담당해온 UI 중심 프론트엔드 개발자입니다.
+                                <br><br>
+                                JSP 기반 환경부터 React 프로젝트까지 다양한 구조 속에서 퍼블리싱과 UI 구현을 경험했으며, 데이터 흐름을 이해하고 화면 구조를 개선하는 데 강점을 가지고 있습니다.
+                                <br><br>
+                                인하우스 협업 환경에서 기획·디자인·개발 직군과 긴밀히 협업하며, 기존 코드를 빠르게 분석하고 안정적으로 유지보수하는 역할을 수행해왔습니다.
+                                <br><br>
+                                JavaScript(ES6)를 활용한 인터랙션 구현이 가능하며, 데이터 기반 관리자 UI와 대시보드 화면 설계 경험을 보유하고 있습니다.
+                                <br><br>
                             </p>
-    
-                            <div class="about-work">
-                                <h5>웹 퍼블리셔 경력</h5>
-    
-                                <div class="work-detail">
-                                    <span class="work-date">2020.07 ~ 현재 | ㈜디플럭스씨앤씨</span>
-    
-                                    <ul class="work-list">
-                                        <li>대기업 인하우스 프로젝트에서 웹사이트 운영 및 신규 페이지 퍼블리싱 담당</li>
-                                        <li>DL 계열사 13개 홈페이지(e편한세상, ACRO, DL홀딩스 등) 유지/보수</li>
-                                        <li>JSP 기반 웹 환경에서, CSS 마크업 및 JavaScript(ES6) 작업 수행</li>
-                                        <li>React 기반 프로젝트에서 JSX, SCSS 마크업 및 TypeScript 작업 수행</li>
-                                        <li>Azure DevOps를 통한 코드 형상 관리 및 자동 배포 환경 대응</li>
-                                    </ul>
-
-                                    <small class="display-b mt-10">※ 동일 프로젝트 내에서 협력사 변경을 거쳐 현재까지 근속</small>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </article>
@@ -120,536 +101,86 @@
                     <h3 class="box-title">WORK</h3>
                     
                     <div class="work-box">
-                        <div class="work-tab">
-                            <ul class="tab-list">
-                                <li class="is-active" data-target="operation">운영 <span>프로젝트</span></li>
-                                <li class="" data-target="build">구축 <span>프로젝트</span></li>
-                            </ul>
-                        </div>
-
                         <div class="work-content">
-                            <!-- 운영 -->
-                            <div class="work-panel operation is-active">
+                            <div class="work-panel operation">
                                 <!-- Swiper -->
                                 <div class="swiper workSwiper">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <a href="https://www.elife.co.kr/Mnmn_main.action" target="_blank" title=" 바로가기" aria-label=" 바로가기" rel="noopener noreferrer" class="work-card">
+                                            <button type="button" class="work-card" data-layer="work01">
                                                 <div class="work__logo-img">
-                                                    <img src="https://www.elife.co.kr/common/front/images/common/logo.png">
+                                                    <img src="static/img/work/work01.png" alt="e편한세상 분양 사이트 썸네일">
                                                 </div>
                                                 <div class="work__txt">
-                                                    <span class="work__txt-tit">DL이앤씨 e편한세상</span>
-                                                    
-                                                    <ul class="work__txt-list">
-                                                        <li><strong>운영 기간 : </strong>2020.07 ~ 현재</li>
-                                                        <li><strong>기술 스택 : </strong>#HTML #CSS #JavaScript(ES6)</li>
-                                                        <li><strong>개발 환경 : </strong>JSP</li>
-                                                        <li><strong>형상 관리 : </strong>Azure DevOps</li>
-                                                    </ul>
+                                                    <span class="work__txt-tit">DL그룹 아파트 분양 웹사이트 운영</span>
                                                 </div>
-                                            </a>
+                                            </button>
                                         </div>
                                         <div class="swiper-slide">
-                                            <a href="https://www.dlcon-apt.co.kr/" target="_blank" title=" 바로가기" aria-label=" 바로가기" rel="noopener noreferrer" class="work-card">
+                                            <button type="button" class="work-card" data-layer="work02">
                                                 <div class="work__logo-img">
-                                                    <img src="https://www.elife.co.kr/common/front/images/common/logo.png">
+                                                    <img src="static/img/work/work02.png" alt="DL그룹 기업 홈페이지 통합 썸네일">
                                                 </div>
                                                 <div class="work__txt">
-                                                    <span class="work__txt-tit">DL건설 e편한세상</span>
-
-                                                    <ul class="work__txt-list">
-                                                        <li><strong>운영 기간 : </strong>2020.07 ~ 현재</li>
-                                                        <li><strong>기술 스택 : </strong>#React #SCSS #TypeScript</li>
-                                                        <li><strong>개발 환경 : </strong>(구)JSP, (현)React</li>
-                                                        <li><strong>형상 관리 : </strong>Azure DevOps</li>
-                                                    </ul>
+                                                    <span class="work__txt-tit">DL그룹 기업 홈페이지 통합 운영</span>
                                                 </div>
-                                            </a>
+                                            </button>
                                         </div>
                                         <div class="swiper-slide">
-                                            <a href="https://www.acro.co.kr/Mnmn_main.action" target="_blank" title=" 바로가기" aria-label=" 바로가기" rel="noopener noreferrer" class="work-card">
-                                                <div class="work__logo-img medium">
-                                                    <img src="https://www.acro.co.kr/common/front/img/svg/ico-logo.svg">
-                                                </div>
-                                                <div class="work__txt">
-                                                    <span class="work__txt-tit">DL이앤씨 ACRO</span>
-                                                    
-                                                    <ul class="work__txt-list">
-                                                        <li><strong>운영 기간 : </strong>2020.07 ~ 현재</li>
-                                                        <li><strong>기술 스택 : </strong>#HTML #SCSS #JavaScript(ES6)</li>
-                                                        <li><strong>개발 환경 : </strong>JSP</li>
-                                                        <li><strong>형상 관리 : </strong>Azure DevOps</li>
-                                                    </ul>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a href="https://www.dlholdings.co.kr/ko/index.do" target="_blank" title=" 바로가기" aria-label=" 바로가기" rel="noopener noreferrer" class="work-card">
+                                            <button type="button" class="work-card" data-layer="work03">
                                                 <div class="work__logo-img">
-                                                    <img src="https://www.dlholdings.co.kr/img/ci_logo.svg">
+                                                    <img src="static/img/work/work03.png" alt="e편한세상 통합 게이트 페이지 썸네일">
                                                 </div>
                                                 <div class="work__txt">
-                                                    <span class="work__txt-tit">DL홀딩스</span>
-                                                    
-                                                    <ul class="work__txt-list">
-                                                        <li><strong>운영 기간 : </strong>2020.07 ~ 현재</li>
-                                                        <li><strong>기술 스택 : </strong>#HTML #CSS #JavaScript</li>
-                                                        <li><strong>개발 환경 : </strong>JSP</li>
-                                                        <li><strong>형상 관리 : </strong>FTP (보안 접속 환경)</li>
-                                                    </ul>
+                                                    <span class="work__txt-tit">e편한세상 통합 게이트 페이지 구축</span>
                                                 </div>
-                                            </a>
+                                            </button>
                                         </div>
                                         <div class="swiper-slide">
-                                            <a href="https://www.daelim.co.kr/ko/pc/index.do" target="_blank" title=" 바로가기" aria-label=" 바로가기" rel="noopener noreferrer" class="work-card">
-                                                <div class="work__logo-img large">
-                                                    <img src="./static/img/daelim.png">
-                                                </div>
-                                                <div class="work__txt">
-                                                    <span class="work__txt-tit">(주)대림</span>
-                                                    
-                                                    <ul class="work__txt-list">
-                                                        <li><strong>운영 기간 : </strong>2020.07 ~ 현재</li>
-                                                        <li><strong>기술 스택 : </strong>#HTML #CSS #JavaScript</li>
-                                                        <li><strong>개발 환경 : </strong>JSP</li>
-                                                        <li><strong>형상 관리 : </strong>Azure DevOps & Admin</li>
-                                                    </ul>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a href="https://www.dlchemical.co.kr/" target="_blank" title=" 바로가기" aria-label=" 바로가기" rel="noopener noreferrer" class="work-card">
-                                                <div class="work__logo-img medium">
-                                                    <img src="https://www.dlchemical.co.kr/assets/ko/images/common/c-logo.svg">
-                                                </div>
-                                                <div class="work__txt">
-                                                    <span class="work__txt-tit">DL케미칼</span>
-                                                    
-                                                    <ul class="work__txt-list">
-                                                        <li><strong>운영 기간 : </strong>2020.07 ~ 현재</li>
-                                                        <li><strong>기술 스택 : </strong>#HTML #CSS #JavaScript(ES6) #반응형</li>
-                                                        <li><strong>개발 환경 : </strong>JSP</li>
-                                                        <li><strong>형상 관리 : </strong>Azure DevOps</li>
-                                                    </ul>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a href="https://www.dlconstruction.co.kr/zMain/main.asp" target="_blank" title=" 바로가기" aria-label=" 바로가기" rel="noopener noreferrer" class="work-card">
-                                                <div class="work__logo-img xlarge">
-                                                    <img src="./static/img/construction.png">
-                                                </div>
-                                                <div class="work__txt">
-                                                    <span class="work__txt-tit">DL건설</span>
-                                                    
-                                                    <ul class="work__txt-list">
-                                                        <li><strong>운영 기간 : </strong>2020.07 ~ 현재</li>
-                                                        <li><strong>기술 스택 : </strong>#HTML #CSS #JavaScript(ES6)</li>
-                                                        <li><strong>개발 환경 : </strong>JSP</li>
-                                                        <li><strong>형상 관리 : </strong>원격 개발 환경 (내부망 보안 접속)</li>
-                                                    </ul>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a href="https://www.dlenergy.co.kr/main.do" target="_blank" title=" 바로가기" aria-label=" 바로가기" rel="noopener noreferrer" class="work-card">
-                                                <div class="work__logo-img medium">
-                                                    <img src="https://www.dlenergy.co.kr/static/images/common/logo_daelimEnergy_blue.png">
-                                                </div>
-                                                <div class="work__txt">
-                                                    <span class="work__txt-tit">DL에너지</span>
-                                                    
-                                                    <ul class="work__txt-list">
-                                                        <li><strong>운영 기간 : </strong>2020.07 ~ 현재</li>
-                                                        <li><strong>기술 스택 : </strong>#HTML #CSS #JavaScript</li>
-                                                        <li><strong>개발 환경 : </strong>JSP</li>
-                                                        <li><strong>형상 관리 : </strong>FTP (보안 접속 환경)</li>
-                                                    </ul>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a href="https://www.dlfnc.co.kr/main.do" target="_blank" title=" 바로가기" aria-label=" 바로가기" rel="noopener noreferrer" class="work-card">
+                                            <button type="button" class="work-card" data-layer="work04">
                                                 <div class="work__logo-img">
-                                                    <img src="https://www.dlfnc.co.kr/static/images/common/img_logo_n.png">
+                                                    <img src="static/img/work/work04.png" alt="Cariflex 관리자 페이지 썸네일">
                                                 </div>
                                                 <div class="work__txt">
-                                                    <span class="work__txt-tit">DL FnC</span>
-                                                    
-                                                    <ul class="work__txt-list">
-                                                        <li><strong>운영 기간 : </strong>2020.07 ~ 현재</li>
-                                                        <li><strong>기술 스택 : </strong>#HTML #CSS #JavaScript</li>
-                                                        <li><strong>개발 환경 : </strong>JSP (국/영문 통합 페이지, properties 파일 기반 다국어 처리)</li>
-                                                        <li><strong>형상 관리 : </strong>FTP (보안 접속 환경)</li>
-                                                    </ul>
+                                                    <span class="work__txt-tit">Cariflex 관리자 페이지 구축</span>
                                                 </div>
-                                            </a>
+                                            </button>
                                         </div>
                                         <div class="swiper-slide">
-                                            <a href="https://www.dlmotors.co.kr//kor/automobile/main.do" target="_blank" title=" 바로가기" aria-label=" 바로가기" rel="noopener noreferrer" class="work-card">
-                                                <div class="work__logo-img medium">
-                                                    <img src="./static/img/motors.jpeg">
+                                            <button type="button" class="work-card" data-layer="work05">
+                                                <div class="work__logo-img">
+                                                    <img src="static/img/work/work05.png" alt="새만금 완산터널 스마트 관제시스템 썸네일">
                                                 </div>
                                                 <div class="work__txt">
-                                                    <span class="work__txt-tit">DL모터스</span>
-                                                    
-                                                    <ul class="work__txt-list">
-                                                        <li><strong>운영 기간 : </strong>2020.07 ~ 현재</li>
-                                                        <li><strong>기술 스택 : </strong>#HTML #CSS #JavaScript</li>
-                                                        <li><strong>개발 환경 : </strong>JSP</li>
-                                                        <li><strong>형상 관리 : </strong>원격 개발 환경 (내부망 보안 접속)</li>
-                                                    </ul>
+                                                    <span class="work__txt-tit">새만금 완산터널 스마트 관제시스템 구축</span>
                                                 </div>
-                                            </a>
+                                            </button>
                                         </div>
                                         <div class="swiper-slide">
-                                            <a href="https://www.daeliminvest.co.kr/main.do" target="_blank" title=" 바로가기" aria-label=" 바로가기" rel="noopener noreferrer" class="work-card">
-                                                <div class="work__logo-img large">
-                                                    <img src="https://www.daeliminvest.co.kr/static/images/common/logo_invest.png">
+                                            <button type="button" class="work-card" data-layer="work06">
+                                                <div class="work__logo-img">
+                                                    <img src="static/img/work/work06.png" alt="M-Plan 대시보드 썸네일">
                                                 </div>
                                                 <div class="work__txt">
-                                                    <span class="work__txt-tit">대림투자운용</span>
-                                                    
-                                                    <ul class="work__txt-list">
-                                                        <li><strong>운영 기간 : </strong>2020.07 ~ 현재</li>
-                                                        <li><strong>기술 스택 : </strong>#HTML #CSS #JavaScript</li>
-                                                        <li><strong>개발 환경 : </strong>JSP</li>
-                                                        <li><strong>형상 관리 : </strong>FTP (보안 접속 환경)</li>
-                                                    </ul>
+                                                    <span class="work__txt-tit">M-Plan 대시보드 구축</span>
                                                 </div>
-                                            </a>
+                                            </button>
                                         </div>
                                         <div class="swiper-slide">
-                                            <a href="https://www.cariflex.com/en/main.do" target="_blank" title=" 바로가기" aria-label=" 바로가기" rel="noopener noreferrer" class="work-card">
-                                                <div class="work__logo-img medium">
-                                                    <img src="https://www.cariflex.com/static/images/contents/pr/logo_cariflex.png">
+                                            <button type="button" class="work-card" data-layer="work07">
+                                                <div class="work__logo-img">
+                                                    <img src="static/img/work/work07.png" alt="GTX-A 스마트 안전관리 시스템 썸네일">
                                                 </div>
                                                 <div class="work__txt">
-                                                    <span class="work__txt-tit">카리플렉스</span>
-                                                    
-                                                    <ul class="work__txt-list">
-                                                        <li><strong>운영 기간 : </strong>2020.07 ~ 현재</li>
-                                                        <li><strong>기술 스택 : </strong>#HTML #CSS #JavaScript</li>
-                                                        <li><strong>개발 환경 : </strong>JSP</li>
-                                                        <li><strong>형상 관리 : </strong>Azure DevOps</li>
-                                                    </ul>
+                                                    <span class="work__txt-tit">GTX-A 스마트 안전관리 시스템 구축</span>
                                                 </div>
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a href="https://www.drexpolymer.com/" target="_blank" title=" 바로가기" aria-label=" 바로가기" rel="noopener noreferrer" class="work-card black">
-                                                <div class="work__logo-img medium">
-                                                    <img src="https://www.drexpolymer.com/resources/images/logo_int.png">
-                                                </div>
-                                                <div class="work__txt">
-                                                    <span class="work__txt-tit">디렉스폴리머</span>
-                                                    
-                                                    <ul class="work__txt-list">
-                                                        <li><strong>운영 기간 : </strong>2022.07 ~ 현재</li>
-                                                        <li><strong>기술 스택 : </strong>#HTML #CSS #JavaScript #반응형</li>
-                                                        <li><strong>개발 환경 : </strong>JSP</li>
-                                                        <li><strong>형상 관리 : </strong>FTP</li>
-                                                    </ul>
-                                                </div>
-                                            </a>
+                                            </button>
                                         </div>
                                     </div>
 
-                                    <div class="swiper-button-next"><i class="fas fa-chevron-circle-right"></i></div>
-                                    <div class="swiper-button-prev"><i class="fas fa-chevron-circle-left"></i></div>
                                     <div class="swiper-pagination"></div>
                                 </div>
                             </div>
-
-                            <!-- 구축 -->
-                            <div class="work-panel build ">
-                                <!-- 주요 -->
-                                <div class="build-represent">
-                                    <h5 class="build-subtit">* 주요 구축 프로젝트</h5>
-
-                                    <div class="represent-box">
-                                        <a href="https://www.elife.co.kr/Mnmn_gate.action" target="_blank" title="e편한세상 게이트 페이지 바로가기" aria-label="e편한세상 게이트 페이지 바로가기" rel="noopener noreferrer" class="represent-card">
-                                            <div class="thumb" data-thumb="1"></div>
-                                            <div class="card-text">
-                                                <h3 class="card-title">e편한세상 게이트 페이지</h3>
-                                                <div class="card-txt">
-                                                    <div class="info">
-                                                        <span>프로젝트 개요</span>
-                                                        <p>DL이앤씨와 DL건설 두 건설사의 브랜드 사이트로 사용자가 혼동하지 않도록 각 회사의 주력 아파트 리스트를 한눈에 보고 쉽게 이동할 수 있는 통합 게이트 페이지</p>
-                                                    </div>
-                                                    <div class="role">
-                                                        <span>담당 역할 및 기여도</span>
-                                                        <ul>
-                                                            <li>- 디자인 시안을 기반으로 전체 퍼블리싱 구현 (API 연결 제외)</li>
-                                                            <li>- 반응형 레이아웃 및 구조 설계 (CSS 미디어 쿼리 적용)</li>
-                                                            <li>- JavaScript 및 Swiper 라이브러리를 활용한 인터랙션 구현</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="work-skill">
-                                                        <span>기술 스택</span>
-                                                        <p>#HTML #CSS(미디어쿼리) #JavaScript(ES5) #Swiper</p>
-                                                    </div>
-                                                    <div class="development">
-                                                        <span>개발 환경</span>
-                                                        <p>JSP</p>
-                                                    </div>
-                                                </div>
-                                                <span class="btn-more">사이트 바로가기 →</span>
-                                            </div>
-                                        </a>
-
-                                        <a href="https://www.acro.co.kr/Posm_main.action?commonMap.CD_BIZ_LND=150468" target="_blank" title="ACRO 분양 사이트 바로가기" aria-label="ACRO 분양 사이트 바로가기" rel="noopener noreferrer" class="represent-card">
-                                            <div class="thumb" data-thumb="2"></div>
-                                            <div class="card-text">
-                                                <h3 class="card-title">ACRO 분양 사이트 구축</h3>
-                                                <div class="card-txt">
-                                                    <div class="info">
-                                                        <span>프로젝트 개요</span>
-                                                        <p>ACRO 아파트 분양을 위한 고객 대상 사이트로, 신규 분양 정보·단지 소개·사이버주택전시관 등 주요 콘텐츠를 제공하는 적응형(PC/Mobile 구분) 웹사이트</p>
-                                                    </div>
-                                                    <div class="role">
-                                                        <span>담당 역할 및 기여도</span>
-                                                        <ul>
-                                                            <li>- 기존 공통 레이아웃 및 SCSS 구조를 분석·활용하여 페이지 퍼블리싱 수행 (약 60% 참여)</li>
-                                                            <li>- 주요 섹션의 인터랙션 및 스크롤 연동 효과 구현 (JS, Swiper, FullPage.js)</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="work-skill">
-                                                        <span>기술 스택</span>
-                                                        <p>#HTML #SCSS #JavaScript(ES5) #Swiper #FullPage.js</p>
-                                                    </div>
-                                                    <div class="development">
-                                                        <span>개발 환경</span>
-                                                        <p>JSP</p>
-                                                    </div>
-                                                </div>
-                                                <span class="btn-more">사이트 바로가기 →</span>
-                                            </div>
-                                        </a>
-
-                                        <div class="represent-card is-disabled">
-                                            <div class="thumb icon">
-                                                <i class="fa-solid fa-building-lock fa-2xl"></i>
-                                                <span>(내부 보안 정책상 이미지는 비공개입니다.)</span>
-                                            </div>
-                                            <div class="card-text">
-                                                <h3 class="card-title">Cariflex 관리자 페이지</h3>
-                                                <div class="card-txt">
-                                                    <div class="info">
-                                                        <span>프로젝트 개요</span>
-                                                        <p>관리자 페이지를 신규 구축하여 계정 관리·로그 관리·게시판 등록 기능 등을 퍼블리싱. 내부 운영 담당자가 콘텐츠를 직접 관리할 수 있도록 하는 관리자 전용 웹 인터페이스.</p>
-                                                    </div>
-                                                    <div class="role">
-                                                        <span>담당 역할 및 기여도</span>
-                                                        <ul>
-                                                            <li>- 관리자 페이지 전체 퍼블리싱 100% (기획 단계부터 구조 설계 참여)</li>
-                                                            <li>- 로그인, 관리자 계정 관리, 접속 로그/권한 로그 관리 화면 퍼블리싱</li>
-                                                            <li>- 게시판(공지/소식글) 등록 및 리스트 화면 구현 (HTML 기반 주고 설계 및 JavaScript 인터랙션 처리)</li>
-                                                            <li>- 날짜 선택 기능 구현(Date Picker 활용) 및 UX 흐름 개선 제안</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="work-skill">
-                                                        <span>기술 스택</span>
-                                                        <p>#HTML #SCSS #JavaScript #DatePicker</p>
-                                                    </div>
-                                                    <div class="development">
-                                                        <span>개발 환경</span>
-                                                        <p>JSP</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- 기타 -->
-                                <div class="build-etc">
-                                    <h5 class="build-subtit">* 기타 구축 프로젝트</h5>
-
-                                    <!-- pc 버전 -->
-                                    <table class="etc-list-pc table-type1">
-                                        <caption></caption>
-                                        <colgroup>
-                                            <col style="width: 15%;">
-                                            <col style="width: 20%;">
-                                            <col style="width: 15%;">
-                                            <col style="width: auto;">
-                                            <col style="width: 15%;">
-                                        </colgroup>
-                                        <thead>
-                                            <th>프로젝트 유형</th>
-                                            <th>프로젝트명</th>
-                                            <th>기술 스택</th>
-                                            <th>주요 역할</th>
-                                            <th>비고</th>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th rowspan="11">운영 내 구축</th>
-                                                <td>e편한세상 분양 사이트<br>메인 레이아웃 리뉴얼</td>
-                                                <td>#HTML #CSS #JavaScript #Swiper #JSP</td>
-                                                <td>문구:이미지=1:1 그리드로 재설계, 메인 비주얼 내 Swiper 롤링 적용.</td>
-                                                <td><a class="build-etc__link" href="https://www.elife.co.kr/Posm_list01.action?commonMap.CD_BIZ_LND=240118" target="_blank" title="사이트 바로가기" aria-label="사이트 바로가기" rel="noopener noreferrer"><i class="fas fa-link"></i> 사이트 바로가기</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>보안 점검 안내 게이트 페이지</td>
-                                                <td>#HTML #CSS(미디어쿼리) #반응형</td>
-                                                <td>
-                                                    서버 점검 중 사용자 안내용 반응형 HTML 페이지 제작.<br>
-                                                    단일 정적 페이지 구조 설계.
-                                                </td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>DL에너지 > 공정거래자율준수(CP)</td>
-                                                <td>#HTML #CSS</td>
-                                                <td>기존 템플릿 기반으로 홈페이지 톤앤매너에 맞춰 구축.</td>
-                                                <td><a class="build-etc__link" href="https://www.dlenergy.co.kr/sustainability/justiceDeal01.do" target="_blank" title="사이트 바로가기" aria-label="사이트 바로가기" rel="noopener noreferrer"><i class="fas fa-link"></i> 사이트 바로가기</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>DL홀딩스 > ESG</td>
-                                                <td rowspan="3">#HTML #CSS #JavaScript #Swiper</td>
-                                                <td rowspan="3">
-                                                    기존 템플릿 기반으로 홈페이지 톤앤매너에 맞춰 구축.<br>
-                                                    다크모드·폰트 크기 대응 CSS 커스터마이징.
-                                                </td>
-                                                <td><a class="build-etc__link" href="https://www.dlholdings.co.kr/ko/dl/sustain/esgStrate.do" target="_blank" title="사이트 바로가기" aria-label="사이트 바로가기" rel="noopener noreferrer"><i class="fas fa-link"></i> 사이트 바로가기</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>DL홀딩스 > 투자정보 > 그룹 하이라이트</td>
-                                                <td><a class="build-etc__link" href="https://www.dlholdings.co.kr/ko/ir/overview.do" target="_blank" title="사이트 바로가기" aria-label="사이트 바로가기" rel="noopener noreferrer"><i class="fas fa-link"></i> 사이트 바로가기</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>DL홀딩스 > 미디어센터 > Let's DL</td>
-                                                <td><a class="build-etc__link" href="https://www.dlholdings.co.kr/ko/media/letsDl/list.do" target="_blank" title="사이트 바로가기" aria-label="사이트 바로가기" rel="noopener noreferrer"><i class="fas fa-link"></i> 사이트 바로가기</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>완산터널 스마트 관제시스템</td>
-                                                <td>#HTML #CSS #JavaScript #Chart.js #Swiper</td>
-                                                <td>공사 현장 작업 현황 대시보드 구축. Chart.js 옵션, 레이아웃 설정 및 표시 로직 구현. Swiper로 공정 현황 슬라이드 구성.</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>MPLAN 메인 페이지</td>
-                                                <td>#HTML #CSS #JavaScript</td>
-                                                <td>현장별 날씨·공사·공지 정보 대시보드 화면 구성. 데이터 표시용 UI 레이아웃 구축.</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>DI-Things 노무관리 > IoT 운영</td>
-                                                <td>#HTML #CSS #JavaScript #Chart.js</td>
-                                                <td>현장 인원·장비 현황 및 모니터링 UI 구축. 테이블 활용해 게시판 형식의 레이아웃 설계.</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>GTX-A 안전관리시스템 대시보드</td>
-                                                <td>#HTML #CSS #JavaScript #Chart.js #Swiper</td>
-                                                <td>공사현장별 안전 현황 대시보드 구축. 터널별 작업자수·주의 발생 건수 시각화, 경고 알럿 UI 구현</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>재건축조합 운영지원시스템 > 로그인 페이지</td>
-                                                <td>#HTML #CSS(미디어쿼리) #반응형</td>
-                                                <td>피그마 시안 기반 로그인 화면 구축.</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <th>외부 구축</th>
-                                                <td>라이온 코리아 내부 ERP 시스템</td>
-                                                <td>#React #SCSS #CoreUI</td>
-                                                <td>리액트 CoreUI 커스텀 및 UI 구조 정리. 기존 화면 틀어짐 개선, 컴포넌트 생성 및 스타일 정돈</td>
-                                                <td>약 2주간 단기 투입</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-
-                                    <!-- tablet/mobile 버전 -->
-                                    <div class="etc-list-mo">
-                                        <div class="etc-list__box">
-                                            <h5 class="etc-list__tit">e편한세상 분양 사이트 메인 레이아웃 리뉴얼</h5>
-                                            <ul class="etc-list__items">
-                                                <li>- 기술 스택 : #HTML #CSS #JavaScript #Swiper #JSP</li>
-                                                <li>- 주요 역할 : 문구:이미지=1:1 그리드로 재설계, 메인 비주얼 내 Swiper 롤링 적용</li>
-                                                <li>- 비고 : <a href="https://www.elife.co.kr/Posm_list01.action?commonMap.CD_BIZ_LND=240118" target="_blank" title="사이트 바로가기" aria-label="사이트 바로가기" rel="noopener noreferrer"><i class="fas fa-link"></i> 사이트 바로가기</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="etc-list__box">
-                                            <h5 class="etc-list__tit">보안 점검 안내 게이트 페이지</h5>
-                                            <ul class="etc-list__items">
-                                                <li>- 기술 스택 : #HTML #CSS(미디어쿼리) #반응형</li>
-                                                <li>- 주요 역할 : 서버 점검 중 사용자 안내용 반응형 HTML 페이지 제작. 단일 정적 페이지 구조 설계.</li>
-                                            </ul>
-                                        </div>
-                                        <div class="etc-list__box">
-                                            <h5 class="etc-list__tit">DL에너지 > 공정거래자율준수(CP)</h5>
-                                            <ul class="etc-list__items">
-                                                <li>- 기술 스택 : #HTML #CSS</li>
-                                                <li>- 주요 역할 : 기존 템플릿 기반으로 홈페이지 톤앤매너에 맞춰 구축.</li>
-                                                <li>- 비고 : <a class="build-etc__link" href="https://www.dlenergy.co.kr/sustainability/justiceDeal01.do" target="_blank" title="사이트 바로가기" aria-label="사이트 바로가기" rel="noopener noreferrer"><i class="fas fa-link"></i> 사이트 바로가기</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="etc-list__box">
-                                            <h5 class="etc-list__tit">DL홀딩스</h5>
-                                            <ul class="etc-list__items">
-                                                <li>- 기술 스택 : #HTML #CSS #JavaScript #Swiper</li>
-                                                <li>- 주요 역할 : 기존 템플릿 기반으로 홈페이지 톤앤매너에 맞춰 구축. 다크모드·폰트 크기 대응 CSS 커스터마이징.</li>
-                                                <li>
-                                                    - 비고 : <br>
-                                                    <a href="https://www.dlholdings.co.kr/ko/dl/sustain/esgStrate.do" target="_blank" title="ESG 바로가기" aria-label="ESG 바로가기" rel="noopener noreferrer"><i class="fas fa-link"></i> ESG 바로가기</a><br>
-                                                    <a href="https://www.dlholdings.co.kr/ko/ir/overview.do" target="_blank" title="그룹하이라이트 바로가기" aria-label="그룹하이라이트 바로가기" rel="noopener noreferrer"><i class="fas fa-link"></i> 그룹하이라이트 바로가기</a><br>
-                                                    <a href="https://www.dlholdings.co.kr/ko/media/letsDl/list.do" target="_blank" title="Let's DL 바로가기" aria-label="Let's DL 바로가기" rel="noopener noreferrer"><i class="fas fa-link"></i> Let's DL 바로가기</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="etc-list__box">
-                                            <h5 class="etc-list__tit">완산터널 스마트 관제시스템</h5>
-                                            <ul class="etc-list__items">
-                                                <li>- 기술 스택 : #HTML #CSS #JavaScript #Chart.js #Swiper</li>
-                                                <li>- 주요 역할 : 공사 현장 작업 현황 대시보드 구축. Chart.js 옵션, 레이아웃 설정 및 표시 로직 구현. Swiper로 공정 현황 슬라이드 구성.</li>
-                                            </ul>
-                                        </div>
-                                        <div class="etc-list__box">
-                                            <h5 class="etc-list__tit">MPLAN 메인 페이지</h5>
-                                            <ul class="etc-list__items">
-                                                <li>- 기술 스택 : #HTML #CSS #JavaScript</li>
-                                                <li>- 주요 역할 : 현장별 날씨·공사·공지 정보 대시보드 화면 구성. 데이터 표시용 UI 레이아웃 구축.</li>
-                                            </ul>
-                                        </div>
-                                        <div class="etc-list__box">
-                                            <h5 class="etc-list__tit">DI-Things 노무관리 > IoT 운영</h5>
-                                            <ul class="etc-list__items">
-                                                <li>- 기술 스택 : #HTML #CSS #JavaScript #Chart.js</li>
-                                                <li>- 주요 역할 : 현장 인원·장비 현황 및 모니터링 UI 구축. 테이블 활용해 게시판 형식의 레이아웃 설계.</li>
-                                            </ul>
-                                        </div>
-                                        <div class="etc-list__box">
-                                            <h5 class="etc-list__tit">GTX-A 안전관리시스템 대시보드</h5>
-                                            <ul class="etc-list__items">
-                                                <li>- 기술 스택 : #HTML #CSS #JavaScript #Chart.js #Swiper</li>
-                                                <li>- 주요 역할 : 공사현장별 안전 현황 대시보드 구축. 터널별 작업자수·주의 발생 건수 시각화, 경고 알럿 UI 구현</li>
-                                            </ul>
-                                        </div>
-                                        <div class="etc-list__box">
-                                            <h5 class="etc-list__tit">재건축조합 운영지원시스템 > 로그인 페이지</h5>
-                                            <ul class="etc-list__items">
-                                                <li>- 기술 스택 : #HTML #CSS(미디어쿼리) #반응형</li>
-                                                <li>- 주요 역할 : 피그마 시안 기반 로그인 화면 구축.</li>
-                                            </ul>
-                                        </div>
-                                        <div class="etc-list__box">
-                                            <h5 class="etc-list__tit">라이온 코리아 내부 ERP 시스템</h5>
-                                            <ul class="etc-list__items">
-                                                <li>- 기술 스택 : #React #SCSS #CoreUI</li>
-                                                <li>- 주요 역할 : 리액트 CoreUI 커스텀 및 UI 구조 정리. 기존 화면 틀어짐 개선, 컴포넌트 생성 및 스타일 정돈</li>
-                                                <li>- 비고 : 외부 구축 / 약 2주간 단기 투입</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            
                         </div>
                     </div>
                 </article>
@@ -726,9 +257,8 @@
                                 <dl>
                                     <dt><h5 class="project-tit">투두리스트</h5></dt>
                                     <dd class="project-txt">
-                                        React로 구현한 투두리스트 프로젝트로, React + SCSS + TypeScript를 기반으로 제작했습니다.<br>
-                                        할 일 추가/삭제, 완료 체크, 필터링, 날짜 변경, 로컬 스토리지 저장 등 다양한 기능을 구현했습니다.<br>
-                                        <small>(디자인보다 기능 구현과 구조 설계에 중점을 둔 프로젝트입니다.)</small>
+                                        React + TypeScript + SCSS 기반으로 제작한 SPA 형태의 Todo 관리 애플리케이션입니다.<br>
+                                        단순 UI 구현을 넘어, 상태 관리 구조 설계와 컴포넌트 분리를 중심으로 개발한 프로젝트입니다.
     
                                         <div class="project-skill">
                                             <p>주요 기능/사용 라이브러리 :</p>
@@ -873,7 +403,7 @@
                 <div class="footer">
                     <p class="footer-txt">
                         Designed & Developed by HYNA💛<br>
-                        © 2025 HYNA Portfolio. All rights reserved.
+                        © 2026 HYNA Portfolio. All rights reserved.
                     </p>
                 </div>
             </footer>
@@ -885,122 +415,274 @@
                 <button class="floating-btn" type="button"><i class="fa-solid fa-arrow-up"></i></button>
             </div>
         </aside>
+
+        <!-- popup -->
+        <div class="popup" data-layer="work01">
+            <div class="popup-wrap">
+                <header class="popup-header">
+                    <h4 class="popup-title">DL그룹 아파트 분양 웹사이트 운영</h4>
+                    <button type="button" class="popup-close" aria-label="닫기"><i class="fa-solid fa-xmark"></i></button>
+                </header>
+                <div class="popup-body">
+                    <div class="swiper popupSwiper popupSwiper--work01">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="static/img/work/work01-1.png" alt="ACRO 메인페이지"></div>
+                            <div class="swiper-slide"><img src="static/img/work/work01-2.png" alt="ACRO 분양페이지"></div>
+                            <div class="swiper-slide"><img src="static/img/work/work01-3.png" alt="e편한세상 분양페이지"></div>
+                            <div class="swiper-slide"><img src="static/img/work/work01-4.png" alt="e편한세상 분양페이지"></div>
+                            <div class="swiper-slide"><img src="static/img/work/work01-5.png" alt="e편한세상 분양페이지"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="popup-footer">
+                    <div class="popup-desc">
+                        <h5>프로젝트 설명</h5>
+                        <ul>
+                            <li>JSP &amp; React 기반 분양/브랜드 웹사이트 화면 개발 및 운영</li>
+                            <li>HTML/CSS(SCSS)/JavaScript/TypeScript 기반 UI 구현</li>
+                            <li>아파트 단지별 랜딩/홍보 페이지 템플릿 제작 및 신규 페이지 구축</li>
+                            <li>공통 include 구조(JSP) 및 React 컴포넌트 모듈화 설계로 재사용성 향상</li>
+                            <li>고급 브랜드(ACRO) 특성에 맞춘 인터랙션 중심 UI/UX 구현</li>
+                            <li>클라이언트 요구사항 반영 및 운영 이슈 분석/오류 수정 대응</li>
+                            <li>페이지 로딩 속도 모니터링 및 성능 개선 작업 수행</li>
+                        </ul>
+                    </div>
+                    <div class="popup-link">
+                        <a href="https://www.elife.co.kr/Mnmn_main.action" target="_blank" rel="noopener noreferrer">DL이앤씨 e편한세상<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://www.dlcon-apt.co.kr/" target="_blank" rel="noopener noreferrer">DL건설 e편한세상<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://www.acro.co.kr/Mnmn_main.action" target="_blank" rel="noopener noreferrer">ACRO<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-layer="work02">
+            <div class="popup-wrap">
+                <header class="popup-header">
+                    <h4 class="popup-title">DL그룹 기업 홈페이지 통합 운영</h4>
+                    <button type="button" class="popup-close" aria-label="닫기"><i class="fa-solid fa-xmark"></i></button>
+                </header>
+                <div class="popup-body">
+                    <div class="swiper popupSwiper popupSwiper--work02">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="static/img/work/work02-1.png" alt="DL케미칼 홈페이지"></div>
+                            <div class="swiper-slide"><img src="static/img/work/work02-2.png" alt="DL케미칼 홈페이지"></div>
+                            <div class="swiper-slide"><img src="static/img/work/work02-3.png" alt="DL에너지 홈페이지"></div>
+                            <div class="swiper-slide"><img src="static/img/work/work02-4.png" alt="Cariflex 홈페이지"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="popup-footer">
+                    <div class="popup-desc">
+                        <h5>프로젝트 설명</h5>
+                        <ul>
+                            <li>JSP 기반 기업/브랜드 웹사이트 화면 개발 및 통합 운영/유지보수</li>
+                            <li>공통 include 구조 설계로 재사용성과 유지보수 효율 개선</li>
+                            <li>적응형/반응형 UI 구현 및 크로스브라우징 대응</li>
+                            <li>properties 파일 기반 다국어 처리 시스템 운영</li>
+                            <li>기업별 톤앤매너에 맞춘 신규 페이지 설계 및 구축</li>
+                            <li>운영 이슈 모니터링 및 오류 분석/수정 대응</li>
+                            <li>반복 마크업 템플릿화 및 구조 개선을 통한 제작 속도 향상</li>
+                        </ul>
+                    </div>
+                    <div class="popup-link">
+                        <a href="https://www.dlholdings.co.kr/ko/index.do" target="_blank" rel="noopener noreferrer">DL홀딩스<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://www.daelim.co.kr/ko/pc/index.do" target="_blank" rel="noopener noreferrer">(주)대림<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://www.dlchemical.co.kr/" target="_blank" rel="noopener noreferrer">DL케미칼칼<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://www.dlconstruction.co.kr/zMain/main.asp" target="_blank" rel="noopener noreferrer">DL건설<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://www.dlenergy.co.kr/main.do" target="_blank" rel="noopener noreferrer">DL에너지<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://www.dlfnc.co.kr/main.do" target="_blank" rel="noopener noreferrer">DL FnC<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://www.dlmotors.co.kr/kor/automobile/main.do" target="_blank" rel="noopener noreferrer">DL모터스<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://www.daeliminvest.co.kr/main.do" target="_blank" rel="noopener noreferrer">대림투자운용용<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://www.cariflex.com/en/main.do" target="_blank" rel="noopener noreferrer">Cariflex<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://www.drexpolymer.com/" target="_blank" rel="noopener noreferrer">DREX 폴리머<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-layer="work03">
+            <div class="popup-wrap">
+                <header class="popup-header">
+                    <h4 class="popup-title">e편한세상 통합 게이트 페이지 구축</h4>
+                    <button type="button" class="popup-close" aria-label="닫기"><i class="fa-solid fa-xmark"></i></button>
+                </header>
+                <div class="popup-body">
+                    <div class="swiper popupSwiper popupSwiper--work03">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="static/img/work/work03-1.png" alt="e편한세상 통합 게이트 페이지"></div>
+                            <div class="swiper-slide"><img src="static/img/work/work03-2.png" alt="e편한세상 통합 게이트 페이지"></div>
+                            <div class="swiper-slide"><img src="static/img/work/work03-3.png" alt="e편한세상 통합 게이트 페이지"></div>
+                            <div class="swiper-slide"><img src="static/img/work/work03-4.png" alt="e편한세상 통합 게이트 페이지"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="popup-footer">
+                    <div class="popup-overview">
+                        <h5>프로젝트 개요</h5>
+                        <p>DL이앤씨와 DL건설 두 건설사의 브랜드 사이트를 연결하는 통합 게이트 페이지로, 사용자가 각 브랜드의 주력 아파트 단지를 직관적으로 비교하고 빠르게 이동할 수 있도록 설계된 웹 서비스</p>
+                    </div>
+                    <div class="popup-desc">
+                        <h5>프로젝트 설명</h5>
+                        <ul>
+                            <li>디자인 시안을 기반으로 전체 화면 구조 설계 및 퍼블리싱 구현</li>
+                            <li>반응형 웹 구조 설계 및 CSS 미디어쿼리 기반 레이아웃 최적화</li>
+                            <li>JavaScript 기반 사용자 인터랙션 로직 구현</li>
+                            <li>Swiper 라이브러리를 활용한 슬라이드 및 동적 UI 구현</li>
+                            <li>브랜드별 정보 구조를 고려한 사용자 흐름(UI/UX) 개선</li>
+                            <li>크로스브라우징 테스트 및 UI 안정성 확보</li>
+                        </ul>
+                    </div>
+                    <div class="popup-link">
+                        <a href="https://www.elife.co.kr/Mnmn_gate.action" target="_blank" rel="noopener noreferrer">e편한세상 통합 게이트 페이지<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-layer="work04">
+            <div class="popup-wrap">
+                <header class="popup-header">
+                    <h4 class="popup-title">Cariflex 관리자 페이지 구축</h4>
+                    <button type="button" class="popup-close" aria-label="닫기"><i class="fa-solid fa-xmark"></i></button>
+                </header>
+                <div class="popup-body">
+                    <div class="swiper popupSwiper popupSwiper--work04">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="static/img/work/work04-1.png" alt="Cariflex 관리자 페이지"></div>
+                            <div class="swiper-slide"><img src="static/img/work/work04-2.png" alt="Cariflex 관리자 페이지"></div>
+                            <div class="swiper-slide"><img src="static/img/work/work04-3.png" alt="Cariflex 관리자 페이지"></div>
+                            <div class="swiper-slide"><img src="static/img/work/work04-4.png" alt="Cariflex 관리자 페이지"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="popup-footer">
+                    <div class="popup-overview">
+                        <h5>프로젝트 개요</h5>
+                        <p>내부 운영 담당자가 계정, 로그, 게시글 등을 직접 관리할 수 있도록 관리자 전용 웹 인터페이스(Admin Page)를 신규 구축한 프로젝트</p>
+                    </div>
+                    <div class="popup-desc">
+                        <h5>프로젝트 설명</h5>
+                        <ul>
+                            <li>관리자 페이지 전체 화면 구조 설계 및 UI 퍼블리싱 구현</li>
+                            <li>로그인/권한 관리/계정 관리/접속·권한 로그 관리 등 운영 기능 화면 개발</li>
+                            <li>게시판(CRUD) 등록/수정/삭제/목록 화면 구현 및 데이터 기반 UI 처리</li>
+                            <li>JavaScript 기반 폼 처리 및 사용자 인터랙션 로직 개발</li>
+                            <li>날짜 선택, 필터링 등 운영 편의성을 고려한 Date 라이브러리 적용</li>
+                            <li>운영 담당자 피드백 기반 UX 흐름 개선 및 사용성 고도화</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-layer="work05">
+            <div class="popup-wrap">
+                <header class="popup-header">
+                    <h4 class="popup-title">새만금 완산터널 스마트 관제시스템 구축</h4>
+                    <button type="button" class="popup-close" aria-label="닫기"><i class="fa-solid fa-xmark"></i></button>
+                </header>
+                <div class="popup-body">
+                    <div class="swiper popupSwiper popupSwiper--work05">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="static/img/work/work05-1.png" alt="새만금 완산터널 스마트 관제시스템"></div>
+                            <div class="swiper-slide"><img src="static/img/work/work05-2.png" alt="새만금 완산터널 스마트 관제시스템"></div>
+                            <div class="swiper-slide"><img src="static/img/work/work05-3.png" alt="새만금 완산터널 스마트 관제시스템"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="popup-footer">
+                    <div class="popup-overview">
+                        <h5>프로젝트 개요</h5>
+                        <p>공사 현장의 공정 진행률, CCTV 영상, 작업 환경 수치(산소, 유해가스 등), 현장 인원 현황을 실시간으로 모니터링하는 스마트 관제 대시보드 시스템 구축</p>
+                    </div>
+                    <div class="popup-desc">
+                        <h5>프로젝트 설명</h5>
+                        <ul>
+                            <li>HTML/CSS 기반 대시보드 UI 구현</li>
+                            <li>JavaScript를 활용한 화면 내 상태값 분기 처리 및 동적 UI 업데이트 구현</li>
+                            <li>공정 진행률 데이터에 따른 진행 바 및 상태 색상 UI 처리</li>
+                            <li>환경 측정 수치(산소, 유해가스 등)에 따른 경고/정상/주의 상태 표시 로직 반영</li>
+                            <li>CCTV 영역 UI 구성 및 모달 팝업 인터랙션 구현</li>
+                            <li>현장 인원 수 및 방향별 인원 현황 UI 구성</li>
+                            <li>데이터 상태에 따른 UI 분기 구조를 이해하고, 화면 레벨에서 동적 표시 로직을 구현</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-layer="work06">
+            <div class="popup-wrap">
+                <header class="popup-header">
+                    <h4 class="popup-title">M-Plan 대시보드 구축</h4>
+                    <button type="button" class="popup-close" aria-label="닫기"><i class="fa-solid fa-xmark"></i></button>
+                </header>
+                <div class="popup-body">
+                    <div class="swiper popupSwiper popupSwiper--work06">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="static/img/work/work06-1.png" alt="M-Plan 대시보드"></div>
+                            <div class="swiper-slide"><img src="static/img/work/work06-2.png" alt="M-Plan 대시보드"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="popup-footer">
+                    <div class="popup-overview">
+                        <h5>프로젝트 개요</h5>
+                        <p>DL이앤씨에서 진행 중인 공사 현장별 공정 현황, 인원 관리, 날씨 정보, 진척도 등을 확인할 수 있는 내부 관리자 대시보드 시스템 구축</p>
+                    </div>
+                    <div class="popup-desc">
+                        <h5>프로젝트 설명</h5>
+                        <ul>
+                            <li>HTML/CSS 기반 관리자 대시보드 UI 레이아웃 설계 및 구현</li>
+                            <li>현장별 공정 진척도 및 상태 정보를 시각적으로 표현하는 UI 구성</li>
+                            <li>다량의 현황 데이터를 테이블 구조로 정리 및 화면 최적화</li>
+                            <li>날짜/현장 선택에 따른 화면 표시 구조 설계 및 UI 분기 처리</li>
+                            <li>날씨 상태에 따른 아이콘 및 UI 표현 구성 (API 연동 없이 화면 구현)</li>
+                            <li>공통 테이블 스타일 구조 정리 및 반복 UI 모듈화 작업</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-layer="work07">
+            <div class="popup-wrap">
+                <header class="popup-header">
+                    <h4 class="popup-title">GTX-A 스마트 안전관리 시스템 구축</h4>
+                    <button type="button" class="popup-close" aria-label="닫기"><i class="fa-solid fa-xmark"></i></button>
+                </header>
+                <div class="popup-body">
+                    <div class="swiper popupSwiper popupSwiper--work07">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="static/img/work/work07-1.png" alt="GTX-A 스마트 안전관리 시스템"></div>
+                            <div class="swiper-slide"><img src="static/img/work/work07-2.png" alt="GTX-A 스마트 안전관리 시스템"></div>
+                            <div class="swiper-slide"><img src="static/img/work/work07-3.png" alt="GTX-A 스마트 안전관리 시스템"></div>
+                            <div class="swiper-slide"><img src="static/img/work/work07-4.png" alt="GTX-A 스마트 안전관리 시스템"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="popup-footer">
+                    <div class="popup-overview">
+                        <h5>프로젝트 개요</h5>
+                        <p>GTX-A 공사 현장의 인원·차량 현황, 공기질 및 환경 수치, 공정 상태 등을 통합 모니터링하는 안전관리 대시보드 시스템 구축</p>
+                    </div>
+                    <div class="popup-desc">
+                        <h5>프로젝트 설명</h5>
+                        <ul>
+                            <li>HTML/CSS 기반 다중 공구(1~6공구) 카드형 대시보드 UI 설계 및 구현</li>
+                            <li>JavaScript를 활용한 날짜·시간 실시간 표시 기능 구현</li>
+                            <li>날씨 상태 UI 표현 로직 구현 (API 연동 없이 상태값 기반 화면 처리)</li>
+                            <li>위험/경고/주의 상태에 따른 UI 분기 및 색상 체계 적용</li>
+                            <li>공기질 및 환경 수치 데이터를 시각적으로 표현하는 UI 구성</li>
+                            <li>Chart 라이브러리를 활용한 도넛/막대 차트 데이터 시각화 구현</li>
+                            <li>공구별 인원·차량 현황 지도 기반 인터페이스 UI 구현</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script>
-        /* header scroll */
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('.header');
-            const floating = document.querySelector('.floating');
-            const scrollY = window.scrollY;
-
-            if(scrollY > 0) {
-                header.classList.add('is-fixed');
-                floating.classList.add('is-active');
-            } else if(scrollY === 0) {
-                header.classList.remove('is-fixed');
-                floating.classList.remove('is-active');
-            }
-        });
-
-        /* header nav btn (tablet/mobile) */
-        const navBtn = document.querySelector('.nav-btn');
-        const navList = document.querySelector('.mo-nav-list');
-        const navLinks = document.querySelectorAll('.mo-nav-list a');
-        const body = document.body;
-
-        navBtn.addEventListener('click', (e) => {
-            e.stopPropagation();
-
-            const isOpen = navBtn.classList.toggle('is-open');
-            navList.classList.toggle('is-open');
-            body.classList.toggle('no-scroll', isOpen);
-        });
-
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                navBtn.classList.remove('is-open');
-                navList.classList.remove('is-open');
-                body.classList.remove('no-scroll');
-            });
-        });
-
-        document.addEventListener('click', (e) => {
-            if (!navList.contains(e.target) && !navBtn.contains(e.target)) {
-                navBtn.classList.remove('is-open');
-                navList.classList.remove('is-open');
-                body.classList.remove('no-scroll');
-            }
-        });
-
-        /* work > tab */
-        (function () {
-            var tabs = document.querySelectorAll('.tab-list li');
-            var opPanel = document.querySelector('.work-panel.operation');
-            var buildPanel = document.querySelector('.work-panel.build');
-            tabs.forEach(function(tab){
-                tab.addEventListener('click', function(){
-                // 탭 활성화 토글
-                tabs.forEach(function(t){ t.classList.remove('is-active'); });
-                tab.classList.add('is-active');
-
-                // 전환
-                var target = tab.getAttribute('data-target');
-                if (target === 'operation') {
-                    opPanel.classList.add('is-active');
-                    buildPanel.classList.remove('is-active');
-                } else {
-                    buildPanel.classList.add('is-active');
-                    opPanel.classList.remove('is-active');
-                }
-                });
-            });
-        })();
-
-
-        /* floating btn */
-        const btn = document.querySelector('.floating-btn');
-
-        btn.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-
-        /* Swiper */
-        var swiper = new Swiper(".workSwiper", {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            pagination: {
-                el: ".swiper-pagination",
-                dynamicBullets: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-                0: { // 기본값 (모바일)
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                    navigation: {
-                        enabled: false,
-                    }
-                },
-                700: { // 641px 이상 ~ 1199px 이하
-                    slidesPerView: 2.2,
-                    spaceBetween: 20,
-                    navigation: {
-                        enabled: false,
-                    }
-                },
-                1200: { // 1200px 이상
-                    slidesPerView: 3.2,
-                    spaceBetween: 30,
-                },
-            },
-        });
-    </script>
 </body>
 </html>

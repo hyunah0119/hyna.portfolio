@@ -11,7 +11,8 @@
     --color-bg: #FFF2B2;              /* 버터 옐로 - 전체 배경 */
     --color-point: #FFA9A3;           /* 포인트 핑크 - 버튼, 강조 */
     --color-sub-point: #FFD88C;       /* 서브 포인트 - hover, 보조 하이라이트 */
-    
+    --color-link: #FF7A70;
+
     /* 텍스트 */
     --color-text-main: #333;       /* 기본 텍스트 */
     --color-text-sub: #666;        /* 설명, 보조 텍스트 */
